@@ -67,8 +67,8 @@
 		3825979219844972001E8A5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3825979919844D74001E8A5F /* ClassRoster.plist */,
 				3825979319844998001E8A5F /* Person.swift */,
+				3825979919844D74001E8A5F /* ClassRoster.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";

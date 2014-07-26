@@ -12,10 +12,17 @@ class Person {
 	var firstName : String
 	var lastName : String
 	var personImage : UIImage?
+	var gitHubHandle: String?
+	var twitterHandle: String?
 	
-	init(names first: String, last: String) {
+	init(first: String, last: String) {
 		self.firstName = first
 		self.lastName = last
+	}
+	convenience init(first:String, last:String, gitHub:String?, twitter:String?) {
+		self.init(first: first, last: last)
+		self.gitHubHandle = gitHub
+		self.twitterHandle = twitter
 	}
 	
 	func fullName() -> String {

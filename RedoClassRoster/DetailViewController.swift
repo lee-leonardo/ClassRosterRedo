@@ -13,6 +13,9 @@ class DetailViewController: UIViewController {
 	
 	@IBOutlet weak var firstName: UITextField!
 	@IBOutlet weak var lastName: UITextField!
+	@IBOutlet weak var gitHubHandle: UITextField!
+	@IBOutlet weak var twitterHandle: UITextField!
+
 	
 
     override func viewDidLoad() {
@@ -25,10 +28,14 @@ class DetailViewController: UIViewController {
 	override func viewWillAppear(animated: Bool) {
 		firstName.text = person.firstName
 		lastName.text = person.lastName
+		gitHubHandle.text = person.gitHubHandle
+		twitterHandle.text = person.twitterHandle
 	}
 	override func viewWillDisappear(animated: Bool)  {
 		person.firstName = firstName.text
 		person.lastName = lastName.text
+		person.gitHubHandle = gitHubHandle.text
+		person.twitterHandle = twitterHandle.text
 	}
 
     override func didReceiveMemoryWarning() {

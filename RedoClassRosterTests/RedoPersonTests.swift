@@ -34,15 +34,19 @@ class RedoPersonTests: XCTestCase {
     }
 	
 	func testNameProperties() {
-		var person = Person(names: "Leo", last: "Lee")
+		var person = Person(first: "Leo", last: "Lee")
 		XCTAssertNotNil(person.firstName, "No first name!")
 		XCTAssertNotNil(person.lastName, "No last name!")
 	}
 	func testFullNameFunction() {
 		let first = "Leo"
 		let last = "Lee"
-		var person = Person(names: first, last: last)
+		var person = Person(first: first, last: last)
 		XCTAssertNotNil(person.fullName() == first+last, "Full name function is wrong! does not equal!")
+	}
+	func testHandles() {
+		let gitHub = "lee-leonardo"
+		let twitter = "@theChromatose"
 	}
 
 }
