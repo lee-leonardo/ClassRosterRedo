@@ -10,6 +10,8 @@
 		3825979419844998001E8A5F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825979319844998001E8A5F /* Person.swift */; };
 		3825979519844998001E8A5F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825979319844998001E8A5F /* Person.swift */; };
 		3825979719844A45001E8A5F /* RedoPersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825979619844A45001E8A5F /* RedoPersonTests.swift */; };
+		3825979819844CD8001E8A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E22A1984361400C432B3 /* ViewController.swift */; };
+		3825979A19844D74001E8A5F /* ClassRoster.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3825979919844D74001E8A5F /* ClassRoster.plist */; };
 		38D4E2291984361400C432B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E2281984361400C432B3 /* AppDelegate.swift */; };
 		38D4E22B1984361400C432B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E22A1984361400C432B3 /* ViewController.swift */; };
 		38D4E22E1984361400C432B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D4E22C1984361400C432B3 /* Main.storyboard */; };
@@ -30,6 +32,7 @@
 /* Begin PBXFileReference section */
 		3825979319844998001E8A5F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3825979619844A45001E8A5F /* RedoPersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedoPersonTests.swift; sourceTree = "<group>"; };
+		3825979919844D74001E8A5F /* ClassRoster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassRoster.plist; sourceTree = "<group>"; };
 		38D4E2231984361400C432B3 /* RedoClassRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedoClassRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D4E2271984361400C432B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D4E2281984361400C432B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		3825979219844972001E8A5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3825979919844D74001E8A5F /* ClassRoster.plist */,
 				3825979319844998001E8A5F /* Person.swift */,
 			);
 			name = Model;
@@ -110,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				38D4E23B1984361400C432B3 /* RedoClassRosterTests.swift */,
-				38D4E2391984361400C432B3 /* Supporting Files */,
 				3825979619844A45001E8A5F /* RedoPersonTests.swift */,
+				38D4E2391984361400C432B3 /* Supporting Files */,
 			);
 			path = RedoClassRosterTests;
 			sourceTree = "<group>";
@@ -213,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D4E22E1984361400C432B3 /* Main.storyboard in Resources */,
+				3825979A19844D74001E8A5F /* ClassRoster.plist in Resources */,
 				38D4E2301984361400C432B3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +248,7 @@
 			files = (
 				3825979519844998001E8A5F /* Person.swift in Sources */,
 				38D4E23C1984361400C432B3 /* RedoClassRosterTests.swift in Sources */,
+				3825979819844CD8001E8A5F /* ViewController.swift in Sources */,
 				3825979719844A45001E8A5F /* RedoPersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

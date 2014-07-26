@@ -32,5 +32,17 @@ class RedoClassRosterTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+	func testRosterArrayExists() {
+		var controller = ViewController()
+		XCTAssertNotNil(controller.rosterArray, "Roster doesn't exist!")
+	}
+	func testCreateRoster() {
+		let first = "Leonardo"
+		let last = "Lee"
+		
+		var controller = ViewController()
+		controller.createRoster()
+		XCTAssertNotNil(controller.rosterArray[2].fullName() == first+last, "Create roster does not work!")
+	}
     
 }
