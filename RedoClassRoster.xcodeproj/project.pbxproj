@@ -12,6 +12,7 @@
 		3825979719844A45001E8A5F /* RedoPersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825979619844A45001E8A5F /* RedoPersonTests.swift */; };
 		3825979819844CD8001E8A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E22A1984361400C432B3 /* ViewController.swift */; };
 		3825979A19844D74001E8A5F /* ClassRoster.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3825979919844D74001E8A5F /* ClassRoster.plist */; };
+		3825979C1984538B001E8A5F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825979B1984538B001E8A5F /* DetailViewController.swift */; };
 		38D4E2291984361400C432B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E2281984361400C432B3 /* AppDelegate.swift */; };
 		38D4E22B1984361400C432B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E22A1984361400C432B3 /* ViewController.swift */; };
 		38D4E22E1984361400C432B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D4E22C1984361400C432B3 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		3825979319844998001E8A5F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3825979619844A45001E8A5F /* RedoPersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedoPersonTests.swift; sourceTree = "<group>"; };
 		3825979919844D74001E8A5F /* ClassRoster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassRoster.plist; sourceTree = "<group>"; };
+		3825979B1984538B001E8A5F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		38D4E2231984361400C432B3 /* RedoClassRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedoClassRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D4E2271984361400C432B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D4E2281984361400C432B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				38D4E22A1984361400C432B3 /* ViewController.swift */,
+				3825979B1984538B001E8A5F /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				3825979419844998001E8A5F /* Person.swift in Sources */,
 				38D4E22B1984361400C432B3 /* ViewController.swift in Sources */,
 				38D4E2291984361400C432B3 /* AppDelegate.swift in Sources */,
+				3825979C1984538B001E8A5F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

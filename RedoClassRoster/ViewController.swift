@@ -8,20 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
 	var rosterArray = [Person]()
 	
+	@IBOutlet var tableView : UITableView?
 	
+//MARK: ViewController
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.title = "Class Roster"
+		createRoster()
 		
+	}
+	override func viewWillAppear(animated: Bool) {
+		tableView?.reloadData()
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
 	}
-	
+//MARK: Custom Methods
 	func createRoster() {
 		rosterArray.append(Person(names: "John", last: "Clem"))
 		rosterArray.append(Person(names: "Brad", last: "Johnson"))
@@ -36,6 +42,39 @@ class ViewController: UIViewController {
 
 		
 	}
+	
+//MARK: UITableViewDataSource
+	func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+		return rosterArray.count
+	}
+	func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+		let cell = tableView.dequeueReusableCellWithIdentifier("RosterCell", forIndexPath: indexPath) as UITableViewCell
+		cell.textLabel.text = rosterArray[indexPath.row].firstName
+		cell.detailTextLabel.text = rosterArray[indexPath.row].lastName
+		
+		if let hasImage = rosterArray[indexPath.row].personImage {
+			cell.imageView.image = hasImage
+		}
+		
+		return cell
+	}
+	
+//MARK: UITableViewDelegate
 
+//MARK: Segue
+	override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+		var indexPath = tableView!.indexPathForSelectedRow()
+		if segue.identifier == "ShowDetail" {
+			let destination = segue.destinationViewController as DetailViewController
+			destination.person = rosterArray[indexPath.row]
+			tableView?.deselectRowAtIndexPath(indexPath, animated: true) //Nice little graphical clean up at the end.
+		}
+	}
 }
+
+
+
+
+
+
 
