@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3825979419844998001E8A5F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825979319844998001E8A5F /* Person.swift */; };
+		3825979519844998001E8A5F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825979319844998001E8A5F /* Person.swift */; };
+		3825979719844A45001E8A5F /* RedoPersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825979619844A45001E8A5F /* RedoPersonTests.swift */; };
+		38D4E2291984361400C432B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E2281984361400C432B3 /* AppDelegate.swift */; };
+		38D4E22B1984361400C432B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E22A1984361400C432B3 /* ViewController.swift */; };
+		38D4E22E1984361400C432B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D4E22C1984361400C432B3 /* Main.storyboard */; };
+		38D4E2301984361400C432B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38D4E22F1984361400C432B3 /* Images.xcassets */; };
+		38D4E23C1984361400C432B3 /* RedoClassRosterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4E23B1984361400C432B3 /* RedoClassRosterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38D4E2361984361400C432B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38D4E21B1984361400C432B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38D4E2221984361400C432B3;
+			remoteInfo = RedoClassRoster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3825979319844998001E8A5F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3825979619844A45001E8A5F /* RedoPersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedoPersonTests.swift; sourceTree = "<group>"; };
+		38D4E2231984361400C432B3 /* RedoClassRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedoClassRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D4E2271984361400C432B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38D4E2281984361400C432B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38D4E22A1984361400C432B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38D4E22D1984361400C432B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38D4E22F1984361400C432B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		38D4E2351984361400C432B3 /* RedoClassRosterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedoClassRosterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D4E23A1984361400C432B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38D4E23B1984361400C432B3 /* RedoClassRosterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedoClassRosterTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38D4E2201984361400C432B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D4E2321984361400C432B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3825979219844972001E8A5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3825979319844998001E8A5F /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38D4E21A1984361400C432B3 = {
+			isa = PBXGroup;
+			children = (
+				38D4E2251984361400C432B3 /* RedoClassRoster */,
+				38D4E2381984361400C432B3 /* RedoClassRosterTests */,
+				38D4E2241984361400C432B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38D4E2241984361400C432B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38D4E2231984361400C432B3 /* RedoClassRoster.app */,
+				38D4E2351984361400C432B3 /* RedoClassRosterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38D4E2251984361400C432B3 /* RedoClassRoster */ = {
+			isa = PBXGroup;
+			children = (
+				38D4E2281984361400C432B3 /* AppDelegate.swift */,
+				38D4E22C1984361400C432B3 /* Main.storyboard */,
+				3825979219844972001E8A5F /* Model */,
+				38D4E2451984361E00C432B3 /* Controller */,
+				38D4E22F1984361400C432B3 /* Images.xcassets */,
+				38D4E2261984361400C432B3 /* Supporting Files */,
+			);
+			path = RedoClassRoster;
+			sourceTree = "<group>";
+		};
+		38D4E2261984361400C432B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D4E2271984361400C432B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38D4E2381984361400C432B3 /* RedoClassRosterTests */ = {
+			isa = PBXGroup;
+			children = (
+				38D4E23B1984361400C432B3 /* RedoClassRosterTests.swift */,
+				38D4E2391984361400C432B3 /* Supporting Files */,
+				3825979619844A45001E8A5F /* RedoPersonTests.swift */,
+			);
+			path = RedoClassRosterTests;
+			sourceTree = "<group>";
+		};
+		38D4E2391984361400C432B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D4E23A1984361400C432B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38D4E2451984361E00C432B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38D4E22A1984361400C432B3 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38D4E2221984361400C432B3 /* RedoClassRoster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D4E23F1984361400C432B3 /* Build configuration list for PBXNativeTarget "RedoClassRoster" */;
+			buildPhases = (
+				38D4E21F1984361400C432B3 /* Sources */,
+				38D4E2201984361400C432B3 /* Frameworks */,
+				38D4E2211984361400C432B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedoClassRoster;
+			productName = RedoClassRoster;
+			productReference = 38D4E2231984361400C432B3 /* RedoClassRoster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38D4E2341984361400C432B3 /* RedoClassRosterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D4E2421984361400C432B3 /* Build configuration list for PBXNativeTarget "RedoClassRosterTests" */;
+			buildPhases = (
+				38D4E2311984361400C432B3 /* Sources */,
+				38D4E2321984361400C432B3 /* Frameworks */,
+				38D4E2331984361400C432B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38D4E2371984361400C432B3 /* PBXTargetDependency */,
+			);
+			name = RedoClassRosterTests;
+			productName = RedoClassRosterTests;
+			productReference = 38D4E2351984361400C432B3 /* RedoClassRosterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38D4E21B1984361400C432B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Leonardo Lee";
+				TargetAttributes = {
+					38D4E2221984361400C432B3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					38D4E2341984361400C432B3 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 38D4E2221984361400C432B3;
+					};
+				};
+			};
+			buildConfigurationList = 38D4E21E1984361400C432B3 /* Build configuration list for PBXProject "RedoClassRoster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38D4E21A1984361400C432B3;
+			productRefGroup = 38D4E2241984361400C432B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38D4E2221984361400C432B3 /* RedoClassRoster */,
+				38D4E2341984361400C432B3 /* RedoClassRosterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38D4E2211984361400C432B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D4E22E1984361400C432B3 /* Main.storyboard in Resources */,
+				38D4E2301984361400C432B3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D4E2331984361400C432B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38D4E21F1984361400C432B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3825979419844998001E8A5F /* Person.swift in Sources */,
+				38D4E22B1984361400C432B3 /* ViewController.swift in Sources */,
+				38D4E2291984361400C432B3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D4E2311984361400C432B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3825979519844998001E8A5F /* Person.swift in Sources */,
+				38D4E23C1984361400C432B3 /* RedoClassRosterTests.swift in Sources */,
+				3825979719844A45001E8A5F /* RedoPersonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38D4E2371984361400C432B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38D4E2221984361400C432B3 /* RedoClassRoster */;
+			targetProxy = 38D4E2361984361400C432B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38D4E22C1984361400C432B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D4E22D1984361400C432B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38D4E23D1984361400C432B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38D4E23E1984361400C432B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38D4E2401984361400C432B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = RedoClassRoster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38D4E2411984361400C432B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = RedoClassRoster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38D4E2431984361400C432B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedoClassRoster.app/RedoClassRoster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RedoClassRosterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		38D4E2441984361400C432B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedoClassRoster.app/RedoClassRoster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RedoClassRosterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38D4E21E1984361400C432B3 /* Build configuration list for PBXProject "RedoClassRoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D4E23D1984361400C432B3 /* Debug */,
+				38D4E23E1984361400C432B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D4E23F1984361400C432B3 /* Build configuration list for PBXNativeTarget "RedoClassRoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D4E2401984361400C432B3 /* Debug */,
+				38D4E2411984361400C432B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D4E2421984361400C432B3 /* Build configuration list for PBXNativeTarget "RedoClassRosterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D4E2431984361400C432B3 /* Debug */,
+				38D4E2441984361400C432B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38D4E21B1984361400C432B3 /* Project object */;
+}
