@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 	var rosterArray = [Person]()
 	
 	@IBOutlet var tableView : UITableView?
@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 //MARK: ViewController
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		self.title = "Class Roster"
+		self.title = "Roster"
 		createRoster()
 		
 	}
@@ -42,7 +42,19 @@ class ViewController: UIViewController, UITableViewDataSource {
 
 		
 	}
-	
+//MARK: UITableViewDelegate
+	func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+		//Is this better to be safe? Or should I make it without an optional? A: Doesn't work as an optional.
+		let detail = self.storyboard.instantiateViewControllerWithIdentifier("Detail") as DetailViewController
+		detail.person = self.rosterArray[indexPath.row]
+		
+		if self.navigationController {
+			self.navigationController.pushViewController(detail, animated: true)
+		}
+		
+		tableView?.deselectRowAtIndexPath(indexPath, animated: true) //Nice little graphical clean up at the end.
+
+	}
 //MARK: UITableViewDataSource
 	func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
 		return rosterArray.count
@@ -62,14 +74,14 @@ class ViewController: UIViewController, UITableViewDataSource {
 //MARK: UITableViewDelegate
 
 //MARK: Segue
-	override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-		var indexPath = tableView!.indexPathForSelectedRow()
-		if segue.identifier == "ShowDetail" {
-			let destination = segue.destinationViewController as DetailViewController
-			destination.person = rosterArray[indexPath.row]
-			tableView?.deselectRowAtIndexPath(indexPath, animated: true) //Nice little graphical clean up at the end.
-		}
-	}
+//	override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//		var indexPath = tableView!.indexPathForSelectedRow()
+//		if segue.identifier == "ShowDetail" {
+//			let destination = segue.destinationViewController as DetailViewController
+//			destination.person = rosterArray[indexPath.row]
+//			tableView?.deselectRowAtIndexPath(indexPath, animated: true) //Nice little graphical clean up at the end.
+//		}
+//	}
 }
 
 

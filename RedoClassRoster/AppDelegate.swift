@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
-		// Override point for customization after application launch.
+		//Old School Way of doing the two lines below without Storyboard.
+		//self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+		//let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+		//var viewController = storyboard.instantiateViewControllerWithIdentifier("Root") as UIViewController
+		
+		let navController = UINavigationController(rootViewController: self.window!.rootViewController)
+		self.window!.rootViewController = navController
+		
 		return true
 	}
 

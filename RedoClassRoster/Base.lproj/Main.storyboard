@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zd3-bY-qVs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RedoClassRoster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Root" id="BYZ-38-t0r" customClass="ViewController" customModule="RedoClassRoster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="urv-pd-ck4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="urv-pd-ck4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -39,9 +40,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="gJv-jN-Ty9" kind="show" identifier="ShowDetail" id="mEt-lk-Dcj"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -51,6 +49,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="urv-pd-ck4" secondAttribute="trailing" id="6yT-Mw-7EV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="urv-pd-ck4" secondAttribute="bottom" id="NBl-iP-fYe"/>
+                            <constraint firstItem="urv-pd-ck4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TyQ-gU-xXm"/>
+                            <constraint firstItem="urv-pd-ck4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZjO-bE-iQS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1io-Ie-23d"/>
                     <connections>
@@ -64,7 +68,7 @@
         <!--Detail View Controller-->
         <scene sceneID="Woz-wc-llB">
             <objects>
-                <viewController id="gJv-jN-Ty9" customClass="DetailViewController" customModule="RedoClassRoster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detail" id="gJv-jN-Ty9" customClass="DetailViewController" customModule="RedoClassRoster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yRw-Fu-cCh"/>
                         <viewControllerLayoutGuide type="bottom" id="qyo-OB-xtw"/>
@@ -73,57 +77,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="firstName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zmk-aP-1Ab">
-                                <rect key="frame" x="240" y="81" width="120" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="firstName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zmk-aP-1Ab">
+                                <rect key="frame" x="240" y="213" width="120" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gJv-jN-Ty9" id="erQ-lx-SlI"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lastName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33C-Ks-aTo">
-                                <rect key="frame" x="240" y="119" width="120" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lastName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33C-Ks-aTo">
+                                <rect key="frame" x="240" y="251" width="120" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gJv-jN-Ty9" id="mHC-AB-vww"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gitHubHandle" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZI-Kq-rCD">
-                                <rect key="frame" x="240" y="157" width="120" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gitHubHandle" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZI-Kq-rCD">
+                                <rect key="frame" x="240" y="289" width="120" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gJv-jN-Ty9" id="qsx-3s-POd"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="twitterHandle" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvQ-bL-9UX">
-                                <rect key="frame" x="240" y="195" width="120" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KVm-nF-b1e">
+                                <rect key="frame" x="240" y="85" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="bwc-qa-D3X"/>
+                                    <constraint firstAttribute="width" constant="120" id="p7H-Va-I4r"/>
+                                    <constraint firstAttribute="width" secondItem="KVm-nF-b1e" secondAttribute="height" multiplier="1:1" id="ujz-ZD-Zdj"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="twitterHandle" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvQ-bL-9UX">
+                                <rect key="frame" x="240" y="327" width="120" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gJv-jN-Ty9" id="fgu-7V-fRd"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KZI-Kq-rCD" firstAttribute="top" secondItem="33C-Ks-aTo" secondAttribute="bottom" constant="8" id="1se-YJ-cVh"/>
+                            <constraint firstAttribute="centerX" secondItem="zmk-aP-1Ab" secondAttribute="centerX" id="4sJ-mo-4WM"/>
+                            <constraint firstItem="33C-Ks-aTo" firstAttribute="leading" secondItem="XvQ-bL-9UX" secondAttribute="leading" id="4zn-ZT-QPH"/>
+                            <constraint firstAttribute="centerX" secondItem="33C-Ks-aTo" secondAttribute="centerX" id="Adh-wC-hgV"/>
+                            <constraint firstAttribute="centerX" secondItem="XvQ-bL-9UX" secondAttribute="centerX" id="Tno-ob-H6N"/>
+                            <constraint firstItem="33C-Ks-aTo" firstAttribute="top" secondItem="zmk-aP-1Ab" secondAttribute="bottom" constant="8" id="YBy-sj-uFj"/>
+                            <constraint firstItem="33C-Ks-aTo" firstAttribute="leading" secondItem="KZI-Kq-rCD" secondAttribute="leading" id="Yxs-ml-XAg"/>
+                            <constraint firstAttribute="centerX" secondItem="KZI-Kq-rCD" secondAttribute="centerX" id="e5C-mk-UGX"/>
+                            <constraint firstItem="33C-Ks-aTo" firstAttribute="leading" secondItem="zmk-aP-1Ab" secondAttribute="leading" id="egf-Vg-Mio"/>
+                            <constraint firstItem="XvQ-bL-9UX" firstAttribute="top" secondItem="KZI-Kq-rCD" secondAttribute="bottom" constant="8" id="f61-Rv-kD3"/>
+                            <constraint firstItem="33C-Ks-aTo" firstAttribute="leading" secondItem="KVm-nF-b1e" secondAttribute="leading" id="jHu-oT-xbN"/>
+                            <constraint firstItem="KVm-nF-b1e" firstAttribute="top" secondItem="yRw-Fu-cCh" secondAttribute="bottom" constant="65" id="uFh-WK-7hE"/>
+                            <constraint firstItem="zmk-aP-1Ab" firstAttribute="top" secondItem="KVm-nF-b1e" secondAttribute="bottom" constant="8" id="vWB-oa-Xnw"/>
+                            <constraint firstAttribute="centerX" secondItem="KVm-nF-b1e" secondAttribute="centerX" id="xdT-SY-2A1"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="firstName" destination="zmk-aP-1Ab" id="2fy-vr-Yd1"/>
                         <outlet property="gitHubHandle" destination="KZI-Kq-rCD" id="EP7-9l-fzv"/>
                         <outlet property="lastName" destination="33C-Ks-aTo" id="pfa-Rf-LE6"/>
+                        <outlet property="personPhoto" destination="KVm-nF-b1e" id="rxI-rM-P5Q"/>
                         <outlet property="twitterHandle" destination="XvQ-bL-9UX" id="eW3-qi-lsC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77j-YU-eTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1687" y="136"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="psK-qY-fLs">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zd3-bY-qVs" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cQV-hm-32g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BP9-Pj-jJY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oIm-Ue-mly" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="951" y="-637"/>
         </scene>
     </scenes>
 </document>
