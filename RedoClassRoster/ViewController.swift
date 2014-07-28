@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+//MARK: Properties
 	var rosterArray = [Person]()
 	
+//MARK: IBOutlet
 	@IBOutlet var tableView : UITableView?
 	
 //MARK: ViewController

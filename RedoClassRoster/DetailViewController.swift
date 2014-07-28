@@ -9,9 +9,11 @@
 import UIKit
 
 class DetailViewController: UIViewController, UITextFieldDelegate {
+//MARK: Property
 	var person: Person!
 	var navigationPadding = 200
 	
+//MARK: IBOutlet
 	@IBOutlet weak var firstName: UITextField!
 	@IBOutlet weak var lastName: UITextField!
 	@IBOutlet weak var gitHubHandle: UITextField!
@@ -19,7 +21,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var personPhoto: UIImageView!
 
 	
-
+//MARK: View Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.title = self.person.fullName()
